@@ -75,25 +75,25 @@ public class Main {
             case 12:
             case 1:
             case 2:
-                System.out.println("Its' winter");
+                System.out.println("Its' winter.");
                 break;
             case 3:
             case 4:
             case 5:
-                System.out.println("Its' spring");
+                System.out.println("Its' spring.");
                 break;
             case 6:
             case 7:
             case 8:
-                System.out.println("Its' summer");
+                System.out.println("Its' summer.");
                 break;
             case 9:
             case 10:
             case 11:
-                System.out.println("Its' autumn");
+                System.out.println("Its' autumn.");
                 break;
             default:
-                System.out.println("You entered the wrong data. Please try again");
+                System.out.println("You entered the wrong data. Please try again.");
         }
     }
 }
