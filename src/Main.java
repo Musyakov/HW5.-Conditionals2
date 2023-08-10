@@ -40,9 +40,8 @@ public class Main {
     }
     public static void task3() {
         System.out.println("Задача 3");
-        int year = 396;
-        boolean isLeapYear = ((year > 1584) && (year % 4 == 0) && (year % 100 != 0) || (year > 1584) && (year % 400 == 0));
-        if (isLeapYear) {
+        int year = 1900;
+        if ((year > 1584) && (year % 4 == 0) && (year % 100 != 0) || (year > 1584) && (year % 400 == 0)) {
             System.out.println(year + " is a leap year");
         } else {
             System.out.println(year + " isn't a leap year");
@@ -50,18 +49,14 @@ public class Main {
     }
     public static void task4() {
         System.out.println("Задача 4");
-        int deliveryDistance = 95;
-        boolean isShortRange = deliveryDistance <= 20 && deliveryDistance >= 0;
-        boolean isMediumRange = deliveryDistance > 20 && deliveryDistance < 60;
-        boolean isLongRange = deliveryDistance >= 60 && deliveryDistance <= 100;
-        boolean isOutOfRange = deliveryDistance > 0;
-        if (isShortRange) {
+        int deliveryDistance = 101;
+        if (deliveryDistance <= 20 && deliveryDistance >= 0) {
             System.out.println("It will take 1 days to deliver the credit card");
-        } else if (isMediumRange){
+        } else if (deliveryDistance > 20 && deliveryDistance < 60){
             System.out.println("It will take 2 days to deliver the credit card");
-        } else if (isLongRange) {
+        } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             System.out.println("It will take 3 days to deliver the credit card");
-        } else if (isOutOfRange) {
+        } else if (deliveryDistance > 100) {
             System.out.println("Unfortunately, it is impossible to deliver the credit card to the selected location");
         }
         else {
